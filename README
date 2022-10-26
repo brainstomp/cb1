@@ -1,0 +1,29 @@
+Start by installing CB1 Debian to your CB1 or a MicroSD card.
+Log in as root.
+
+Note that SSHd is enabled by default. If you want to make things a little easier get the IP address of the system and then SSH into it.
+
+Edit the /etc/apt/sources.list file to use the debian default repositories:
+   nano /etc/apt/sources.list
+   
+My sources.list file looks like this:
+
+   deb http://deb.debian.org/debian bullseye main contrib non-free
+   deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+   deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+   
+Update the APT list:
+   apt update
+
+Upgrade any packages that need to be upgraded:
+   apt upgrade
+
+Install xOrg
+   apt install xorg
+
+Install gnome
+   apt install gnome
+   
+You can now start xWindows
+   startx
+   
